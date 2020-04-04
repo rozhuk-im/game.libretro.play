@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="game.libretro.play"
+		name="Sony - PlayStation 2 (Play!)"
+		version="0.30.0"
+		provider-name="Libretro">
+	<requires>
+		<import addon="game.libretro" version="1.0.0"/>
+		<import addon="game.controller.ps.gamepad" version="1.0.0"/>
+		<import addon="game.controller.ps.dualshock" version="1.0.0"/>
+		<import addon="game.controller.ps.dualanalog" version="1.0.0"/>
+		<import addon="game.controller.ps.multitap" version="1.0.0"/>
+	</requires>
+	<extension point="kodi.gameclient"
+			library_@PLATFORM@="@LIBRARY_FILENAME@">
+		<platforms>PlayStation 2</platforms>
+		<extensions>elf|iso|cso|isz|bin</extensions>
+		<supports_vfs>false</supports_vfs>
+		<supports_standalone>false</supports_standalone>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Sony - PlayStation 2 (Play!)</summary>
+		<description lang="en_GB">Play! is an attempt at creating a PlayStation 2 emulator for the Win32, Linux, macOS, iOS and Android platforms.
+
+Authors: Jean-Philip Desjardins
+
+Supported files: .elf, .iso, .cso, .isz, .bin</description>
+		<license>MAME</license>
+		<platform>@PLATFORM@</platform>
+		<source>https://github.com/kodi-game/game.libretro.play</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<screenshot>resources/screenshot-01.png</screenshot>
+			<screenshot>resources/screenshot-02.png</screenshot>
+			<screenshot>resources/screenshot-03.png</screenshot>
+			<screenshot>resources/screenshot-04.png</screenshot>
+			<screenshot>resources/screenshot-05.png</screenshot>
+			<screenshot>resources/screenshot-06.png</screenshot>
+			<screenshot>resources/screenshot-07.png</screenshot>
+			<screenshot>resources/screenshot-08.png</screenshot>
+			<screenshot>resources/screenshot-09.png</screenshot>
+			<screenshot>resources/screenshot-10.png</screenshot>
+			<screenshot>resources/screenshot-11.png</screenshot>
+		</assets>
+	</extension>
+</addon>
